@@ -1,0 +1,67 @@
+images/logo.png
+  Alt: "Jack Sams logo"
+  Notes: Small square or SVG (recommended 80–200px). Use SVG for crisp scaling when possible.
+
+images/headshot.jpg
+  Alt: "Headshot of Jack Sams"
+  Notes: Portrait photo (recommended 400x400–800x800 px). Provide a clear, professional headshot.
+
+images/cover-banner.jpg
+  Alt: "Banner: Jack Sams — Software Developer"
+  Notes: Wide hero/banner image (recommended 1600x400 px). Use an uncluttered background that doesn't hide text.
+
+images/portfolio-responsive-app.jpg
+  Alt: "Screenshot of responsive portfolio web app"
+  Notes: Wide screenshot, focus on layout (recommended 1200x700 px). Use JPEG or WebP for screenshots.
+
+images/portfolio-project-1.jpg
+  Alt: "Screenshot of project: to-do web app built with JavaScript"
+  Notes: Screenshot of project UI; include short descriptive keywords.
+
+images/project-game-godot.jpg
+  Alt: "Screenshot of 2D game prototype built with Godot"
+  Notes: Use PNG/JPEG depending on image content; include game name if available.
+
+images/course-certificate-ivytech.jpg
+  Alt: "Certificate for Technical Degree in Software Development from Ivy Tech Community College"
+  Notes: Crop to show certificate title clearly; blur or redact any personal identifiers if needed.
+
+images/skills-chart.png
+  Alt: "Skills chart showing proficiency levels in HTML, CSS, JavaScript, and Python"
+  Notes: If this is decorative only, consider marking as role="img" with appropriate alt or use aria-hidden if purely decorative.
+
+images/project-thumbnail-1.jpg
+  Alt: "Thumbnail for portfolio project: responsive blog site"
+  Notes: Small preview image for lists or cards (recommended 400x250 px).
+
+# Optional accessibility/SEO additions:
+images/logo.svg
+  Alt: "Jack Sams logo"
+  Notes: Prefer SVG for logos when possible — scales well and keeps file size small.
+
+images/headshot-small.webp
+  Alt: "Headshot of Jack Sams"
+  Notes: Provide a WebP small/optimized version for faster loading on mobile.
+
+# Example HTML snippets (copy-paste)
+# 1) Logo (links to homepage)
+<img src="images/logo.png" alt="Jack Sams logo" class="site-logo">
+
+# 2) Headshot (portrait)
+<img src="images/headshot.jpg" alt="Headshot of Jack Sams" width="200" height="200">
+
+# 3) Responsive screenshot with alt
+<img src="images/portfolio-responsive-app.jpg" alt="Screenshot of responsive portfolio web app" style="max-width:100%;height:auto;">
+
+# 4) Using srcset for performance (replace filenames with your optimized files)
+<img src="images/headshot.jpg"
+     srcset="images/headshot-small.webp 400w, images/headshot.jpg 800w"
+     sizes="(max-width:600px) 200px, 400px"
+     alt="Headshot of Jack Sams">
+
+# Guidance:
+# - Include at least 4 images total (logo + 3 others) as required by the checklist.
+# - Make alt text concise and descriptive; include keywords only when it is genuinely descriptive (e.g., "screenshot of portfolio project: responsive web app").
+# - Keep decorative images' alt empty (alt="") so screen readers skip them.
+# - Use descriptive filenames (good for SEO): e.g., jack-sams-headshot.jpg, portfolio-responsive-app.jpg
+# - Provide WebP versions for smaller file sizes and use srcset to serve them to supporting browsers.
